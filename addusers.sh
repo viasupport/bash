@@ -1,5 +1,5 @@
 #!/bin/bash
-#Create 10 users with random passwords Ver1.1
+#Create 10 users with random passwords Ver2.0
 
 # New User Setup Script
 
@@ -17,7 +17,7 @@ do
   RANDOM_USERNAME="${RANDOM_LETTERS}${RANDOM_NUMBERS}"
 
 #Random USERNAME_PASSWORD
-  RANDOM_USERNAME_PASSWORD=$(tr -dc A-Za-z0-9! < /dev/urandom | head -c 16) #16 random digits, simbols, letters 
+  RANDOM_USERNAME_PASSWORD=$(tr -dc 'A-Za-z0-9!@#$%&*' < /dev/urandom | head -c 16) #16 random digits, simbols, letters 
 
   useradd -r -M $RANDOM_USERNAME
   echo "$RANDOM_USERNAME:$RANDOM_USERNAME_PASSWORD" | sudo chpasswd
