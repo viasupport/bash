@@ -1,9 +1,7 @@
 #!/bin/bash
-#Create 10 users with random passwords
+#Create 10 users with random passwords Ver1.0
 
 # New User Setup Script
-
-
 
 counter=10
 
