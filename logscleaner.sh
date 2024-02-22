@@ -4,8 +4,7 @@
 # Version 0.5
 # Date: 12.01.2024
 
-
-#echo "This script deletes all logs on Ubuntu,Debian OS for all users."
+echo "This script deletes all logs on Ubuntu,Debian OS for all users."
 
 #Check sudo permissions
 #if script started not sudo create request to start with sudo permissions - sudo ./logscleaner.sh
